@@ -357,23 +357,29 @@ footer {
 
 /*home*/
 .home {
-  background-image: none; }
-  .home::after {
-    background-image: url(../imgs/home-bg.png) !important;
-    background-size: cover;
-    background-position: right center;
-    width: 70%;
-    height: 60%; }
-    @media (max-width: 991px) {
-      .home::after {
-        width: 100%;
-        height: 40%; } }
-    @media (max-width: 767px) {
-      .home::after {
-        display: none; } }
+  background-image: none;
+  position: relative; }
   .home .intro {
     width: 50%;
     margin-bottom: 60px; }
+    .home .intro::after {
+      content: "";
+      display: block;
+      position: absolute;
+      background-image: url(../imgs/home-bg.png) !important;
+      background-size: cover;
+      background-position: right center;
+      width: 60%;
+      height: 60%;
+      top: 0;
+      right: 0; }
+      @media (max-width: 991px) {
+        .home .intro::after {
+          width: 100%;
+          height: 40%; } }
+      @media (max-width: 767px) {
+        .home .intro::after {
+          display: none; } }
     @media (max-width: 991px) {
       .home .intro {
         width: 100%; } }
