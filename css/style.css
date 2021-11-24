@@ -1,0 +1,444 @@
+/* vars */
+@font-face {
+  font-family: "Geometria-Bold";
+  src: url(../fonts/Geometria-Bold.ttf); }
+@font-face {
+  font-family: "Geometria-Heavy";
+  src: url(../fonts/Geometria-Heavy.ttf); }
+@font-face {
+  font-family: "Geometria-ExtraBold";
+  src: url(../fonts/Geometria-ExtraBold.ttf); }
+@font-face {
+  font-family: "Geometria";
+  src: url(../fonts/Geometria.ttf); }
+@font-face {
+  font-family: "Geometria-Medium";
+  src: url(../fonts/Geometria-Medium.ttf); }
+body {
+  background-image: url(../imgs/main-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Geometria";
+  color: #fff; }
+
+.mainHeading {
+  font-family: "Geometria-Heavy";
+  color: #fff;
+  margin-bottom: 16px;
+  font-size: 48px; }
+  @media (max-width: 575px) {
+    .mainHeading {
+      font-size: 32px; } }
+  @media (max-width: 375px) {
+    .mainHeading {
+      font-size: 28px; } }
+
+.divider {
+  margin-bottom: 24px; }
+
+.main-p {
+  font-family: "Geometria-Bold";
+  font-size: 28px;
+  margin-bottom: 21px; }
+  @media (max-width: 767px) {
+    .main-p {
+      font-size: 22px; } }
+  @media (max-width: 575px) {
+    .main-p {
+      font-size: 17px; } }
+
+/* header */
+.about {
+  position: relative;
+  background-image: url(../imgs/about-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  /* intro*/ }
+  .about::after {
+    content: "";
+    background-image: url(../imgs/bg1.png);
+    background-position: right top;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    top: 0px;
+    right: 0;
+    position: absolute;
+    z-index: -1; }
+  .about::before {
+    content: "";
+    background-image: url(../imgs/bg-lines.png);
+    display: block;
+    width: 100%;
+    height: 20%;
+    background-repeat: no-repeat;
+    bottom: 160px;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-size: contain; }
+    @media (max-width: 991px) {
+      .about::before {
+        display: none; } }
+  .about .navbar {
+    padding-right: 0;
+    padding-left: 0; }
+    .about .navbar .navbar-nav .nav-link {
+      color: #fff;
+      font-family: "Geometria-Bold";
+      margin-inline-end: 32px;
+      transition: 0.3s; }
+      .about .navbar .navbar-nav .nav-link:hover {
+        color: #e42d27; }
+    .about .navbar .navbar-nav .nav-item.active .nav-link {
+      color: #e42d27; }
+    .about .navbar .switch-langs .dropdown-toggle {
+      color: #fff;
+      font-family: "Geometria-Medium";
+      text-decoration: none; }
+      .about .navbar .switch-langs .dropdown-toggle::after {
+        border: none;
+        background-image: url(../imgs/arrow-down.png);
+        width: 24px;
+        height: 24px;
+        background-repeat: no-repeat;
+        background-position: center;
+        top: 50%;
+        position: absolute;
+        transform: translateY(-50%); }
+    .about .navbar .switch-langs .dropdown-menu {
+      right: 0;
+      left: auto; }
+      @media (max-width: 991px) {
+        .about .navbar .switch-langs .dropdown-menu {
+          right: auto;
+          left: 0; } }
+    .about .navbar .navbar-toggler,
+    .about .navbar .navbar-toggler:focus {
+      border: none;
+      outline: none; }
+    @media (max-width: 991px) {
+      .about .navbar #navbarSupportedContent {
+        margin-top: 20px;
+        background-color: rgba(0, 0, 0, 0.2);
+        padding: 15px;
+        border-radius: 8px; } }
+  .about .intro {
+    margin-top: 40px; }
+    .about .intro h1 {
+      font-family: "Geometria-Heavy";
+      color: #fff;
+      margin-bottom: 4px;
+      text-transform: capitalize;
+      font-size: 48px; }
+      @media (max-width: 575px) {
+        .about .intro h1 {
+          font-size: 32px; } }
+      @media (max-width: 375px) {
+        .about .intro h1 {
+          font-size: 28px; } }
+    .about .intro p {
+      margin-top: 12px;
+      line-height: 28px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      font-family: "Geometria-Medium";
+      font-size: 18px; }
+      @media (max-width: 575px) {
+        .about .intro p {
+          font-size: 17px; } }
+    .about .intro .telegram img {
+      margin-left: -8px;
+      margin-bottom: 60px; }
+
+/* definition*/
+.definition {
+  margin-bottom: 68px; }
+  .definition h2 {
+    font-family: "Geometria-Heavy";
+    font-size: 48px; }
+    @media (max-width: 575px) {
+      .definition h2 {
+        font-size: 32px; } }
+    @media (max-width: 375px) {
+      .definition h2 {
+        font-size: 28px; } }
+  .definition .divider {
+    margin-bottom: 16px; }
+  @media (max-width: 991px) {
+    .definition .def-content {
+      margin-bottom: 24px; } }
+  .definition .def-content img {
+    margin-bottom: 24px; }
+  .definition .def-content h4 {
+    font-size: 21px;
+    font-family: "Geometria-Bold";
+    margin-bottom: 16px; }
+  .definition .def-content p {
+    color: #685f96;
+    line-height: 26px;
+    width: 95%;
+    margin: auto; }
+
+/*  PREMIUM CHANNELS */
+.premium-channels {
+  margin-bottom: 50px; }
+  .premium-channels .main-p {
+    font-family: "Geometria-Bold";
+    font-size: 28px;
+    margin-bottom: 21px; }
+    @media (max-width: 767px) {
+      .premium-channels .main-p {
+        font-size: 22px; } }
+    @media (max-width: 575px) {
+      .premium-channels .main-p {
+        font-size: 17px; } }
+  .premium-channels .list {
+    overflow: scroll; }
+    .premium-channels .list::-webkit-scrollbar {
+      display: none; }
+
+/*exchanges*/
+.exchanges .our-companies {
+  padding: 0 32px;
+  position: relative; }
+  .exchanges .our-companies .owl-carousel,
+  .exchanges .our-companies .owl-stage {
+    position: static; }
+.exchanges .owl-next,
+.exchanges .owl-prev {
+  position: absolute;
+  top: 40px;
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-color: #fff !important;
+  border-radius: 50%;
+  border: none !important;
+  text-align: center;
+  line-height: 28px !important;
+  outline: none !important; }
+  @media (max-width: 1200px) {
+    .exchanges .owl-next,
+    .exchanges .owl-prev {
+      top: 32px; } }
+  @media (max-width: 991px) {
+    .exchanges .owl-next,
+    .exchanges .owl-prev {
+      top: 15px; } }
+  @media (max-width: 767px) {
+    .exchanges .owl-next,
+    .exchanges .owl-prev {
+      top: 5px; } }
+  @media (max-width: 575px) {
+    .exchanges .owl-next,
+    .exchanges .owl-prev {
+      top: 20px; } }
+  @media (max-width: 425px) {
+    .exchanges .owl-next,
+    .exchanges .owl-prev {
+      top: 10px; } }
+  @media (max-width: 374px) {
+    .exchanges .owl-next,
+    .exchanges .owl-prev {
+      top: 30px; } }
+  .exchanges .owl-next span,
+  .exchanges .owl-prev span {
+    color: #000;
+    font-weight: bold;
+    font-size: 28px; }
+.exchanges .owl-next {
+  right: 0 !important; }
+.exchanges .owl-prev {
+  left: 0 !important; }
+
+/*footer*/
+footer {
+  background-color: #d72623;
+  background-image: url(../imgs/footer-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 43px 0; }
+  @media (max-width: 991px) {
+    footer .footer-content {
+      flex-wrap: wrap;
+      justify-content: center !important; } }
+  footer .footer-content p {
+    margin: 0; }
+    @media (max-width: 991px) {
+      footer .footer-content p {
+        margin-bottom: 16px; } }
+    @media (max-width: 575px) {
+      footer .footer-content p {
+        font-size: 14px; } }
+  footer .footer-content .footer-links a {
+    color: #fff;
+    margin-inline-start: 40px;
+    font-size: 16px;
+    font-family: "Geometria-Bold";
+    text-decoration: none; }
+    @media (max-width: 575px) {
+      footer .footer-content .footer-links a {
+        font-size: 14px;
+        margin: 0;
+        display: block; } }
+  @media (max-width: 575px) {
+    footer .footer-content .footer-links {
+      width: 100%; } }
+
+/*providers page */
+.providers::before {
+  display: none; }
+
+.provider-holder {
+  background-color: #270a56;
+  background-image: url(../imgs/providers-bg.png);
+  background-size: 450px;
+  background-position: center;
+  padding: 16px 24px;
+  border-radius: 24px;
+  margin-bottom: 24px; }
+  .provider-holder img {
+    margin-inline-end: 16px;
+    width: 60px; }
+  .provider-holder h5 {
+    font-size: 16px;
+    font-family: "Geometria-Medium"; }
+
+/*packagesContent*/
+.packagesContent {
+  background-color: #270a56;
+  border-radius: 16px;
+  background-image: url(../imgs/packagesBg.png);
+  background-size: 600px;
+  background-position: center;
+  padding: 16px;
+  border-radius: 16px;
+  margin-bottom: 24px; }
+  @media (max-width: 991px) {
+    .packagesContent {
+      background-size: 800px; } }
+  .packagesContent span {
+    display: block;
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-family: "Geometria-Bold"; }
+  .packagesContent h2 {
+    text-align: center;
+    font-size: 55px;
+    font-family: "Geometria-Heavy"; }
+  .packagesContent .separator {
+    width: 100%;
+    margin-bottom: 24px; }
+  .packagesContent ul {
+    margin: 0; }
+    .packagesContent ul li img {
+      margin-inline-end: 8px;
+      display: inline-block; }
+    .packagesContent ul li p {
+      font-size: 14px; }
+  .packagesContent .getStarted {
+    display: block;
+    margin-top: 16px;
+    text-align: center; }
+    @media (max-width: 1200px) {
+      .packagesContent .getStarted img {
+        width: 50% !important; } }
+    @media (max-width: 575px) {
+      .packagesContent .getStarted img {
+        width: 60% !important; } }
+    @media (max-width: 425px) {
+      .packagesContent .getStarted img {
+        width: 70% !important; } }
+
+/*home*/
+.home {
+  background-image: none; }
+  .home::after {
+    background-image: url(../imgs/home-bg.png) !important;
+    background-size: cover;
+    background-position: right center;
+    width: 70%;
+    height: 60%; }
+    @media (max-width: 991px) {
+      .home::after {
+        width: 100%;
+        height: 40%; } }
+    @media (max-width: 767px) {
+      .home::after {
+        display: none; } }
+  .home .intro {
+    width: 50%;
+    margin-bottom: 60px; }
+    @media (max-width: 991px) {
+      .home .intro {
+        width: 100%; } }
+    .home .intro h1 {
+      font-size: 36px; }
+      .home .intro h1 span {
+        color: #e42d27; }
+    .home .intro p {
+      font-size: 14px; }
+    .home .intro .home-links {
+      flex-wrap: wrap; }
+      .home .intro .home-links img {
+        margin: 0; }
+    .home .intro a {
+      width: 150px; }
+      .home .intro a img {
+        width: 100%; }
+    @media (max-width: 767px) {
+      .home .intro h1 {
+        font-size: 28px; } }
+
+/*best-crypto*/
+.best-crypto {
+  background-image: url(../imgs/best-bg.png);
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding: 24px 0; }
+  .best-crypto h2 {
+    font-size: 36px; }
+  .best-crypto p {
+    font-size: 15px; }
+    .best-crypto p strong {
+      display: block;
+      font-size: 28px; }
+      .best-crypto p strong span {
+        color: #e42d27; }
+
+/*reviews*/
+.reviews {
+  background-image: url(../imgs/about-bg.png);
+  padding: 24px 0;
+  background-repeat: no-repeat; }
+  .reviews .client-reviews {
+    padding-bottom: 50px; }
+    .reviews .client-reviews .review-holder {
+      background-color: #270a56;
+      border-radius: 16px;
+      padding: 16px; }
+      @media (max-width: 991px) {
+        .reviews .client-reviews .review-holder {
+          margin-bottom: 24px; } }
+      .reviews .client-reviews .review-holder .client {
+        margin-bottom: 17px; }
+        .reviews .client-reviews .review-holder .client img {
+          width: 50px;
+          margin-inline-end: 7px; }
+        .reviews .client-reviews .review-holder .client .name h5 {
+          margin: 0;
+          font-family: "Geometria-Bold"; }
+        .reviews .client-reviews .review-holder .client .name span {
+          color: #685f96;
+          font-family: "Geometria-Medium";
+          font-size: 14px; }
+      .reviews .client-reviews .review-holder p {
+        font-size: 14px;
+        margin: 0; }
+
+/*# sourceMappingURL=style.css.map */
