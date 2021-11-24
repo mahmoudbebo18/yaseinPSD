@@ -105,6 +105,7 @@ body {
   .navbar {
     padding-right: 0;
     padding-left: 0;
+    z-index: 9999;
     .navbar-nav {
       .nav-link {
         color: $whiteColor;

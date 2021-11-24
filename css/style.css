@@ -84,7 +84,8 @@ body {
         display: none; } }
   .about .navbar {
     padding-right: 0;
-    padding-left: 0; }
+    padding-left: 0;
+    z-index: 9999; }
     .about .navbar .navbar-nav .nav-link {
       color: #fff;
       font-family: "Geometria-Bold";
