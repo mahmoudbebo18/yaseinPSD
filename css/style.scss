@@ -166,8 +166,11 @@ body {
   /* intro*/
   .intro {
     margin-top: 40px;
+    margin-bottom: 32px;
     h1 {
       font-family: $geometriaHeavy;
+      position: relative;
+      z-index: 10;
       color: $whiteColor;
       margin-bottom: 4px;
       text-transform: capitalize;
@@ -176,7 +179,7 @@ body {
         font-size: 32px;
       }
       @media (max-width: 375px) {
-        font-size: 28px
+        font-size: 28px;
       }
     }
     p {
@@ -206,6 +209,8 @@ body {
   margin-bottom: 68px;
   h2 {
     font-family: $geometriaHeavy;
+    z-index: 10;
+    position: relative;
     font-size: 48px;
     @media (max-width: 575px) {
       font-size: 32px;
@@ -434,16 +439,14 @@ footer {
     display: block;
     margin-top: 16px;
     text-align: center;
-    img {
-      @media (max-width: 1200px) {
-        width: 50% !important;
-      }
-      @media (max-width: 575px) {
-        width: 60% !important;
-      }
-      @media (max-width: 425px) {
-        width: 70% !important;
-      }
+    text-decoration: none !important;
+    span {
+      font-size: 14px;
+      color: #fff;
+      background-image: linear-gradient(to right, #ba1619, #e42d27);
+      border-radius: 34px;
+      margin-top: 10px;
+      padding: 20px;
     }
   }
 }
@@ -482,15 +485,20 @@ footer {
     }
     h1 {
       font-size: 36px;
+
       span {
         color: $main;
       }
     }
     p {
       font-size: 14px;
+      position: relative;
+      z-index: 55;
     }
     .home-links {
       flex-wrap: wrap;
+      position: relative;
+      z-index: 222;
       img {
         margin: 0;
       }
@@ -567,5 +575,54 @@ footer {
         margin: 0;
       }
     }
+  }
+}
+
+/*buttons */
+
+.vip,
+.tel,
+.twt {
+  display: inline-flex;
+  border-radius: 24px;
+  align-items: center;
+  justify-content: center;
+  width: auto !important;
+  margin-inline-end: 8px;
+  text-decoration: none !important;
+  span {
+    font-weight: 600;
+    font-size: 13px;
+    color: #fff;
+    padding: 12px;
+    border-radius: 19px;
+    margin: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    i {
+      margin-inline-start: 4px;
+    }
+  }
+}
+.vip {
+  border: 2px solid $main;
+  box-shadow: 0 0 5px $main;
+  span {
+    background-color: $main;
+  }
+}
+.twt {
+  border: 2px solid #00acee;
+  box-shadow: 0 0 5px #00acee;
+  span {
+    background-color: #00acee;
+  }
+}
+.tel {
+  border: 2px solid #0088cc;
+  box-shadow: 0 0 5px #0088cc;
+  span {
+    background-color: #0088cc;
   }
 }

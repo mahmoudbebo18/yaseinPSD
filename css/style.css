@@ -127,9 +127,12 @@ body {
         padding: 15px;
         border-radius: 8px; } }
   .about .intro {
-    margin-top: 40px; }
+    margin-top: 40px;
+    margin-bottom: 32px; }
     .about .intro h1 {
       font-family: "Geometria-Heavy";
+      position: relative;
+      z-index: 10;
       color: #fff;
       margin-bottom: 4px;
       text-transform: capitalize;
@@ -159,6 +162,8 @@ body {
   margin-bottom: 68px; }
   .definition h2 {
     font-family: "Geometria-Heavy";
+    z-index: 10;
+    position: relative;
     font-size: 48px; }
     @media (max-width: 575px) {
       .definition h2 {
@@ -345,16 +350,15 @@ footer {
   .packagesContent .getStarted {
     display: block;
     margin-top: 16px;
-    text-align: center; }
-    @media (max-width: 1200px) {
-      .packagesContent .getStarted img {
-        width: 50% !important; } }
-    @media (max-width: 575px) {
-      .packagesContent .getStarted img {
-        width: 60% !important; } }
-    @media (max-width: 425px) {
-      .packagesContent .getStarted img {
-        width: 70% !important; } }
+    text-align: center;
+    text-decoration: none !important; }
+    .packagesContent .getStarted span {
+      font-size: 14px;
+      color: #fff;
+      background-image: linear-gradient(to right, #ba1619, #e42d27);
+      border-radius: 34px;
+      margin-top: 10px;
+      padding: 20px; }
 
 /*home*/
 .home {
@@ -389,9 +393,13 @@ footer {
       .home .intro h1 span {
         color: #e42d27; }
     .home .intro p {
-      font-size: 14px; }
+      font-size: 14px;
+      position: relative;
+      z-index: 55; }
     .home .intro .home-links {
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 222; }
       .home .intro .home-links img {
         margin: 0; }
     .home .intro a {
@@ -447,5 +455,51 @@ footer {
       .reviews .client-reviews .review-holder p {
         font-size: 14px;
         margin: 0; }
+
+/*buttons */
+.vip,
+.tel,
+.twt {
+  display: inline-flex;
+  border-radius: 24px;
+  align-items: center;
+  justify-content: center;
+  width: auto !important;
+  margin-inline-end: 8px;
+  text-decoration: none !important; }
+  .vip span,
+  .tel span,
+  .twt span {
+    font-weight: 600;
+    font-size: 13px;
+    color: #fff;
+    padding: 12px;
+    border-radius: 19px;
+    margin: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .vip span i,
+    .tel span i,
+    .twt span i {
+      margin-inline-start: 4px; }
+
+.vip {
+  border: 2px solid #e42d27;
+  box-shadow: 0 0 5px #e42d27; }
+  .vip span {
+    background-color: #e42d27; }
+
+.twt {
+  border: 2px solid #00acee;
+  box-shadow: 0 0 5px #00acee; }
+  .twt span {
+    background-color: #00acee; }
+
+.tel {
+  border: 2px solid #0088cc;
+  box-shadow: 0 0 5px #0088cc; }
+  .tel span {
+    background-color: #0088cc; }
 
 /*# sourceMappingURL=style.css.map */
